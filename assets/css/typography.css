@@ -35,6 +35,12 @@ h5{
     font-weight: 500;
 }
 
+/* ===========[HEADER SVG WIDTH]========== */
+#header a svg{
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1);
+}
 /* ==========[SERIVECES SVG WIDTH]========== */
 .services-box svg{
     width: 5rem;
@@ -46,13 +52,13 @@ h5{
 /* ==========[HOME IMG WIDTH]========== */
 .home-img img{
     margin-top: 6rem;
-    width: 35rem;
+    width: 10rem;
 }
 
 /* ==========[ABOUT IMG WIDTH]========== */
 .about-img img{
     margin-top: 6rem;
-    width: 35rem;
+    width: 10rem;
 }
 
 /* ==========[PORTFOLIO IMG WIDTH]========== */
@@ -69,3 +75,71 @@ h5{
     filter: brightness(100%);
 }
 
+
+
+
+/* ===========[MOBILE]========== */
+
+@media screen  and (max-width: 768px){
+    h1{
+        font-weight: 200;
+        font-size: 2.4rem;
+    }
+    
+    h2{
+        font-size: 1.8rem;
+        font-weight: 520;
+        margin-bottom:1rem ;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 520;
+        margin-bottom: 1rem;
+    }
+    
+    h4{ 
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+     h5{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+
+
+
+/* ==========[TABLET]========== */
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    h1{
+        font-weight: 200;
+        font-size: 2.7rem;
+    }
+    
+    h2{
+        font-size: 2.2rem;
+        font-weight: 520;
+        margin-bottom:1rem ;
+    }
+
+    h3{
+        font-size: 1.7rem;
+        font-weight: 520;
+        margin-bottom: 1rem;
+    }
+    
+
+    h4{ 
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    h5{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
