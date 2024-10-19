@@ -15,7 +15,6 @@
 
 /* ==========[BUTTON]========== */
 button{
-    cursor: pointer;
     min-width:7rem;
     height: 2.5rem;
     padding: 0.7rem 1rem ;
@@ -25,6 +24,7 @@ button{
     border: 1px solid black;
     background-color: black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* ==========[WHITE BUTTON]========== */
@@ -69,3 +69,14 @@ button{
 }
 
 
+
+
+
+  /* ==========[TABLET]========== */
+
+
+  @media screen and (max-width: 1024px) and (min-width: 768px){
+    .portfolio-card{
+        width: 16rem;
+    }
+  }
