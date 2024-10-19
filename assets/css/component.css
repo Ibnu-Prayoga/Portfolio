@@ -1,0 +1,71 @@
+
+/* ==========[NAVBAR]========== */
+.navbar a{
+    font-weight: 550;
+    color:  gray;
+    padding: 0.7rem 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.navbar a:hover{
+    background-color: rgba(216, 216, 216, 0.199);
+}
+
+
+/* ==========[BUTTON]========== */
+button{
+    cursor: pointer;
+    min-width:7rem;
+    height: 2.5rem;
+    padding: 0.7rem 1rem ;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* ==========[WHITE BUTTON]========== */
+.white-btn{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* ==========[PORTFOLIO CARD]========== */
+.portfolio-card{
+    width: 20rem;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow:  0 0 5px 3px rgba(70, 70, 70, 0.158);
+}
+
+.portfolio-card:hover {
+    border-top: 1px solid rgba(128, 128, 128, 0.288);
+    transform: translateY(-2px); 
+}
+
+.portfolio-title{
+    width: auto;
+    height: 2.5rem;
+    padding: 0.3rem 1rem 1rem 1rem;
+}
+
+
+/* ==========[SERVICES CARD]========== */
+.services-card{
+    max-width: 10rem;
+    font-size: small;
+    height: 10rem;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.281);
+}
+
+
