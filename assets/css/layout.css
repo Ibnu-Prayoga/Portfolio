@@ -21,6 +21,10 @@
     backdrop-filter: blur(7px);
 }
 
+.menu-toggle{
+    display: none;
+}
+
 
 
 
