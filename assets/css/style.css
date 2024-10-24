@@ -227,6 +227,7 @@ h5{
 }
 .services-box{
   width: 100%;
+  gap: 1rem;
   margin-top: 2rem;
   display: flex;
   align-items: center;
