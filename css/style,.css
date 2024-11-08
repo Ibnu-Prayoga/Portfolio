@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Ethiopic:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Delius&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Ethiopic:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Delius&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Ethiopic:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Delius&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Ethiopic:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
+
+
+:root {
+    
+    --color-primary: ;
+    --color-secondary: ;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-darkgray: #474747;
+    --color-lightgray: #bebebef5;
+    --color-shadow: rgba(94, 94, 94, 0.123);
+    
+    --color-text-dark: #212529;
+    --color-text-gray: #8f8f8f;
+    
+    --color-bg-light: #ffffff;
+    --color-bg-dark: #333333;
+    
+    --font-family-poppins: 'Poppins';
+    --font-family-rubik: 'Rubik', sans-serif;
+    --font-family-delius: 'Delius';
+    --font-family-satify: 'Satisfy';
+    --font-family-noto-sans-ethiopic: "Noto Sans Ethiopic";
+    
+    --font-size-base: 16px;
+    --font-size-large: 1.25rem; 
+    --font-size-medium: 1.13rem;
+    --font-size-small: 0.9rem; 
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    
+    --font-weight-normal: 500;
+    --font-weight-light: 400;
+    --font-weight-bold: 700;
+    
+    --line-height-base: 1.6;
+    --line-height-heading: 1.2;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-dark);
+    background-color: var(--color-light),;
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-rubik);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-light); 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-family-main);
+    line-height: var(--line-height-heading);
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: var(--font-weight-light);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-light);
+}
+
+h5 {
+    font-weight: 200;
+    margin-bottom: 0.1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+#header {
+    width: 100%;
+    height: 6rem;
+    padding: 0 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-family: var(--font-family-satify);
+    font-size: 2rem;
+    text-decoration: 1px underline;
+    text-underline-offset: 0.2rem;
+}
+
+.navbar a {
+    font-weight: var(--font-weight-light);
+    color: var(--color-text-gray);
+    margin-left: 2rem;
+}
+
+.navbar a:hover {
+    color: var(--color-text-dark);
+}
+
+.navbar .btn {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    transition: 0.3s ease-in-out;
+    padding: 0.7rem 1rem;
+    border-radius: 7px;
+}
+
+.navbar .btn:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border: 1px solid var(--color-dark);
+    border-radius: 7px;
+}
+
+#home {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    background-color: cyan;
+    margin-bottom: 6rem;
+    padding: 0 7rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    position: relative;
+    font-family: var(--font-family-noto-sans-ethiopic);
+}
+
+.content-box {
+    align-content: center;
+}
+
+.content-box a {
+    color: var(--color-text-gray);
+}
+
+.image-box {
+    mix-blend-mode: multiply;
+    width: 100%;
+    margin-top: 6rem;
+    padding: 0 3rem;
+}
+
+.social-box {
+    width: 100%;
+    padding: 0 7rem;
+    position: absolute;
+    bottom: -3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 1.5rem;
+    margin-right: 1rem;
+    filter: grayscale(1);
+    opacity: 50%;
+    transition: opacity 0.5s ease;
+    pointer-events: fill;
+}
+
+.social img:hover {
+    opacity: 100%;
+}
+
+.mail a {
+    color: var(--color-text-gray);
+}
+
+#about {
+    width: 100%;
+    height: calc(100vh - 6rem);
+}
+
+#back {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    transition: 0.3s ease-in-out;
+    padding: 0.7rem 1rem;
+    border-radius: 7px;
+}
+
+#back:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border: 1px solid var(--color-dark);
+    transition: 0.3s ease-in-out;
+    padding: 0.7rem 1rem;
+    border-radius: 7px;
+}
+
+#services {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+}
+
+#experience {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 7rem;
+    align-content: center;
+}
+
+.container {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card {
+    width: 100%;
+    max-width: 30rem;
+    height: 15rem;
+    padding: 1rem;
+    position: relative;
+    align-content: center;
+    overflow: hidden;
+    display: inline-block;
+    align-self: center;
+    border-radius: 10px;
+    background-color: var(--color-dark);
+}
+
+.card img {
+    height: 10rem;
+    display: block;
+    filter: brightness(90%);
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+    color: var(--color-light);
+    background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.card .overlay:hover {
+    opacity: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card i {
+    color: var(--color-light);
+    font-size: 1.5rem;
+    position: absolute;
+    opacity: 50%;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    rotate: 50deg;
+}
+
+#contact {
+    width: 100%;
+    padding: 2rem 7rem;
+    align-content: center;
+}
+
+#contact a {
+    color: var(--color-text-dark);
+}
+
+#footer {
+    width: 100%;
+    padding: 3rem 7rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+#footer p,
+#footer a {
+    color: var(--color-text-gray);
+    font-weight: var(--font-weight-light);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    #header {
+        padding: 3rem;
+    }
+  }
+
+
+
+
+/* ===== Tablet ===== */
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 1.7rem;
+        font-weight: var(--font-weight-light);
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        font-weight: var(--font-weight-light);
+    }
+
+    #header {
+        padding: 1rem;
+        height: 4.5rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+    #home {
+        height: calc(100vh - 8rem);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .content-box {
+        padding-bottom: 4rem;
+    }
+
+    .image-box {
+        position: absolute;
+        bottom: -5rem;
+        right: -5rem;
+        padding: 3rem;
+    }    
+
+    #home .social-box {
+        padding: 0rem;
+        bottom: -5rem;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    #experience {
+        padding: 1rem;
+        margin: 5rem 0;
+    } 
+    
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact {
+        padding: 2rem ;
+    }
+
+    #footer {
+        padding: 2rem;
+        flex-direction: column;
+        align-items: start;
+    }
+  }
+
+
+
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 480px) {
+
+    #header {
+        padding: 1rem;
+        height: 4.5rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+    #home {
+        height: calc(100vh - 8rem);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .content-box {
+        padding-bottom: 4rem;
+    }
+
+    .image-box {
+        position: absolute;
+        bottom: -1rem;
+        left: -1rem;
+        opacity: 7%;
+        padding: 0;
+    }    
+
+    #home .social-box {
+        padding: 0rem;
+        bottom: 1rem;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    #experience {
+        padding: 1rem;
+        margin: 5rem 0;
+    } 
+    
+    .container{
+        grid-template-columns:1fr;
+
+    }
+
+    #contact {
+        padding: 2rem 1rem;
+    }
+
+    #footer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        align-items: start;
+    }
+  }
+
+
+
