@@ -370,6 +370,11 @@ a, img {
     display: none;
   }
 
+  #header .navbar-about a {
+    font-size: 1.6rem;
+    margin-left: -1rem;
+  }
+
   #home {
     display: flex;
     flex-direction: column;
