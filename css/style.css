@@ -404,7 +404,7 @@ a, img {
   #about {
     height: auto;
     gap: 2rem;
-    padding: 0 1rem 6rem 1rem;
+    padding: 0 2rem 6rem 2rem;
     grid-template-columns: 1fr;
   }
   
