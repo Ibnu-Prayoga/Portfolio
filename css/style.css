@@ -47,18 +47,18 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     font-size: 2rem;
+    font-weight: 600;
     font-family: var(--font-family-noto-sans-ethiopic);
-    margin-bottom: 0.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;  
+    margin: 0.1rem 0 0.3rem 0;
 }
 
 h3 {
-    font-size: var(--font-size-large);
-    margin: 0.7rem 0;
+    font-size: var(--font-size-base);
+    margin: 0.2rem 0;
 }
 
 button {
@@ -71,9 +71,9 @@ button {
     border: 1px solid var(--color-primary-dark);
     color: var(--color-text-light);
     background-color: var(--color-primary-dark);
-  }
+}
   
-  button:hover {
+button:hover {
     color: var(--color-text-dark);
     background-color: transparent;
     border: 1px solid var(--color-primary-dark);
@@ -121,18 +121,14 @@ a, img {
     color: var(--color-dark);
 }
 
-#header .navbar-about a {
+#header .navbar-about a{
     font-size: 1.5rem;
-    border-radius: 50%;
-    color: var(--color-bg-dark);
-    padding: 0.5rem;
-    margin-left: -0.5rem;
+    color: var(--color-text-gray);
 }
 
 #header .navbar-about a:hover {
-    color: var(--color-bg-dark);
-    padding: 0.5rem;
-    background-color: #79777734;
+    color: var(--color-text-dark);
+      
 }
 
 #header .navbar-mobile {
@@ -166,7 +162,7 @@ a, img {
     width: 100%;
     padding: 0 7rem;
     position: absolute;
-    bottom: 3rem;
+    bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -186,31 +182,32 @@ a, img {
 
 #about {
     height: calc(100vh - 6rem);
-    padding: 0 7rem 0 7rem;
+    padding: 0 7rem;
     display: grid;
-    grid-template-columns: 16rem 2fr;
+    grid-template-columns: 15rem 2fr;
     gap: 5rem;
-    font-size: 1.2rem;
+    font-size: var(--font-size-base);
+}
+
+#about .left {
+    width: 15rem;
 }
 
 #about h1 {
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     margin: 0;
-}
-
-#about .right {
-    padding: 1rem 0;
+    font-family: var(--font-family-noto-sans-ethiopic);
 }
 
 #about .social img, #about a {
     color: var(--color-bg-dark);
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0rem 0.2rem 0 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.2rem 0.2rem 0 0;
     pointer-events: fill;
   }
   
-  #about .social img:hover, #about .social img::after {
+#about .social img:hover, #about .social img::after {
     opacity: 50%;
 }
   
@@ -311,28 +308,31 @@ a, img {
     position: absolute;
     bottom: 1rem;
     left: 1.5rem;
+    font-size: medium;
+    font-weight: 450;
     color: var(--color-text-light);
 }
 
 #experience .overlay .arrow {
-    rotate: 45deg;
-    font-size: 1.7rem;
-    position: absolute;
-    right: 1.5rem;
-    bottom: 1.3rem;
-    color: var(--color-text-light);
+  rotate: 45deg;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.3rem;
+  color: var(--color-text-light);
 }
 
 #contact, #footer {
-    width: 100%;
-    padding: 3rem 7rem;
+  width: 100%;
+  padding: 3rem 7rem;
 }
 
 #contact {
-    padding: 2rem 7rem;
+  padding: 2rem 7rem;
 }
 
-#contact a {
+#contact a, #contact p {
+    margin-top: 1rem;
     color: var(--color-text-dark);
 }
 
@@ -351,13 +351,14 @@ a, img {
 
 
 /* Tablet */
-@media (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   #header, #home, #about, #skills, #experience, #contact, #footer {
@@ -374,94 +375,84 @@ a, img {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
   }
 
-  #home .content-box {
-    top: 35%;
+  #home .image-box{
     position: absolute;
-    z-index: 9;
+    z-index: -1;
+    padding: 0;
   }
-  
+
   #home .image-box img {
     opacity: 10%;
+    padding: 5rem;
   }
 
   #home .social-box {
-    padding: 1rem 0 ;
-    bottom: 4rem;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    bottom: 3.5rem;
+    gap: 0.1rem;
     align-items: start;
-    gap: 0.5rem;
+    flex-direction: column;
   }
 
   #about {
     height: auto;
-    display: flex;
-    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem 6rem 1rem;
+    grid-template-columns: 1fr;
+  }
+  
+  #about .name, #about .contact {
+    width: 15rem;
   }
 
-  #about .right{
-    padding-bottom: 5rem;
-    text-align: justify;
-  }
-
-  #about .left {
-    width: 20rem;
+  #about h1 {
+    font-size: 2.5rem;
   }
 
   #skills {
-    padding: 6rem 2rem;
-    margin: -1rem 0rem;
+    padding: 6rem 1.5rem;
+    margin: -1rem 0;
   }
 
   #skills .content-box {
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  #skills .icon img, #skills svg {
-    width: 2rem;
-    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #experience {
-    padding: 0 2rem;
-  }
-
-  #experience .card {
-    width: 100%;
-    display: block;
+    padding: 3rem 1.5rem;
   }
 
   #experience .container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
   }
 
   #contact {
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     line-height: 1.5rem;
   }
-
-
+  
   #footer {
-    flex-direction: column;
-    padding: 2rem 2.5rem;
+    padding: 2.5rem 2rem;
     font-size: var(--font--size-small);
   }
+
 }
 
 
 /* Mobile */
-@media (max-width: 480px) {  
+@media screen and (max-width: 480px) {  
+
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
+
   #header, #home, #about, #skills, #experience, #contact, #footer {
     padding: 0 1.5rem;        
     overflow: hidden;
@@ -471,6 +462,15 @@ a, img {
     height: 5rem;
   }
 
+  #header .navbar-about a {
+    font-size: 1.3rem;
+    margin-left: -0.5rem;
+  }
+
+  #header .navbar {
+    display: none;
+  }
+
   #home {
     display: flex;
     flex-direction: column;
@@ -478,60 +478,51 @@ a, img {
     align-items: start;
   }
 
-  #home .content-box {
+  #home .image-box{
     position: absolute;
-    top: 35%;    
-    z-index: 9;
+    z-index: -1;
+    padding: 0;
   }
-  
+
   #home .image-box img {
     opacity: 10%;
   }
 
   #home .social-box {
-    padding: 1rem 0 ;
-    bottom: 4rem;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    bottom: 3.5rem;
+    gap: 0.1rem;
     align-items: start;
-    gap: 0.5rem;
+    flex-direction: column;
   }
 
   #about {
-    width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
-    font-size: var(--font-size-base);
+    gap: 2rem;
+    padding: 0 1rem 6rem 1rem;
+    grid-template-columns: 1fr;
+  }
+  
+  #about .name, #about .contact {
+    width: 12rem;
   }
 
-  #about .name {
-    width: 20rem;
-  }
-
-  #about .name h1{
-    font-size: 1.5rem;
-  }
-
-  #about .right{
-    padding: 1rem 0rem;
-    padding-bottom: 5rem;
+  #about h1 {
+    font-size: 2.2rem;
   }
 
   #skills {
     padding: 6rem 1.5rem;
-    margin: -1rem 0rem;
+    margin: -1rem 0;
   }
 
   #skills .content-box {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
-  #skills .icon img, #skills svg {
-    width: 2.5rem;
-    height: 2.5rem;
+  #experience {
+    padding: 3rem 1.5rem;
   }
 
   #experience .container {
@@ -546,12 +537,12 @@ a, img {
     line-height: 1.5rem;
   }
 
-
   #footer {
     flex-direction: column;
     padding: 2rem 1.5rem;
     font-size: var(--font--size-small);
   }
+  
 }
 
 
