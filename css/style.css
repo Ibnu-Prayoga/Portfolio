@@ -511,6 +511,10 @@ a, img {
     width: 20rem;
   }
 
+  #about .name h1{
+    font-size: 1.5rem;
+  }
+
   #about .right{
     padding: 1rem 0rem;
     padding-bottom: 5rem;
